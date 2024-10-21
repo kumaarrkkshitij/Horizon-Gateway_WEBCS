@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+	Name: Kumaarr, Kkshitij
+	Section: CS201
+	Date: October 21, 2024
+	-->
+    <title>Places</title>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <meta name = "description " content = "Explore the must-visit attractions in Dubai with Horizon Gateway, featuring stunning landmarks." />
+    <link rel="stylesheet" href="css/styles.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href = "media/favicon.ico" />
+    <link rel = "icon" type = "image/png" sizes="32*32" href="media/favicon-32.png" />
+    <link rel = "apple-touch-icon" sizes="180*180" href = "media/apple-touch-icon.png" />
+    <link rel ="icon" sizes="192*192" href="media/android-chrome-192.png"/>
+</head>
+
+<body>
+    <header>
+        <img class="hg-logo" alt="none" src="media/HG_logo.png">
+    </header>
+
+    <!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="home_hg.html">Home</a>
+            <a href="places_hg.html">Places</a>
+            <a href="events_hg.html">Events</a>
+            <a href="more_hg.html">More</a>
+		</div>
+		<a class = "menu-icon" onclick = "hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav> 
+    <!-- Desktop - Tablet Nav -->
+    <nav class="navbar-tablet-desktop">
+        <a href="home_hg.html">Home</a>
+        <a href="places_hg.html">Places</a>
+        <a href="events_hg.html">Events</a>
+        <a href="more_hg.html">More</a>
+    </nav>
+
+    <!-- Subheading -->
+    <div class="subheading">
+        <h1>Explore Dubai's Iconic Marvels</h1>
+    </div>
+    
+    <!-- Main Content -->
+    <main class="places">
+    
+    <!-- 1. Burj Khalifa -->
+    <div class = "burj_khalifa">
+        <img class="burj_khalifa_img" alt="Burj Khalida" src="media/Burj_Khalifa_Img.jpeg">
+        <div class = "burj_khalifa_info">
+            <h3> Burj Khalifa  </h3>
+            
+            <p>The Burj Khalifa, standing at an astonishing 828 meters, is the tallest building in the world and a symbol of Dubai’s innovation and ambition. This architectural masterpiece offers breathtaking views from its observation decks, At the Top, on the 124th and 148th floors. Visitors can marvel at the city’s skyline, the Arabian Gulf, and the desert beyond. Whether you're exploring its luxurious interiors, dining in its elegant restaurants, or simply admiring its iconic silhouette, the Burj Khalifa is an unforgettable experience that showcases Dubai's modern grandeur.<br><br>Entrance Fee:  Starting from 359 AED.  
+            </p>
+        </div>
+    </div>
+    <!-- 2. Topgolf Dubai -->
+    <div class="topgolf_dubai">
+        <img class="topgolf_img" alt="TopGolf Dubai" src="media/TopGolf_Dubai_Img.png">
+        <div class="topgolf_info">
+            <h3>TopGolf Dubai</h3>
+            <p>
+                Topgolf Dubai combines high-tech golfing with a lively social scene. Featuring climate-controlled bays and interactive games for all skill levels, it also offers a vibrant restaurant and bar. Ideal for casual outings, corporate events, or family fun, it's a top destination for entertainment in the city.<br><br>Entrance Fee: Ranges from 140 to 250 AED.
+            </p>
+        </div>
+    </div>
+    <!-- 3. The Dubai Mall -->
+    <div class="dubai_mall">
+        <img class="dubai_mall_img" alt="The Dubai Mall" src="media/The_Dubai_Mall_Img.jpg">
+        <div class="dubai_mall_info">
+            <h3>The Dubai Mall</h3>
+            <p>
+                The Dubai Mall, the world's largest mall by total area, spans over 1.1 million square meters. It features over 1,200 stores, an indoor aquarium, an ice rink, and a variety of dining options. More than just a shopping center, it’s a premier destination offering endless entertainment and luxury.
+            </p>
+        </div>
+    </div>
+    <!-- 4. Dubai Fountain -->
+    <div class="dubai_fountain">
+        <img class="dubai_fountain_img" alt="Dubai Fountain" src="media/Dubai_fountain_Img.png">
+        <div class="dubai_fountain_info">
+            <h3>The Dubai Fountain</h3>
+            <p>
+                The Dubai Fountain, the world’s largest choreographed fountain system, spans 275 meters and features water jets that reach up to 150 meters high. Set against the Burj Khalifa and Dubai Mall, it offers mesmerizing water, light, and music shows. Fountain shows occur daily at various times, with the schedule provided below.<br><br>Entrance Fee: Ranges from 140 to 250 AED.
+            </p>
+        </div>
+    </div>
+    <!-- 5. Atmosphere  Burj Khalifa -->
+    <div class="atmosphere_burj_khalifa">
+        <img class="atmosphere_img" alt="At.mosphere at Burj Khalifa" src="media/Atmosphere_Img.jpg">
+        <div class="atmosphere_info">
+            <h3>At.mosphere at Burj Khalifa</h3>
+            <p>
+                The Atmosphere Restaurant, situated on the 122nd floor of the Burj Khalifa, offers stunning panoramic views of Dubai. 
+                With its elegant design and exceptional international cuisine, it provides a luxurious dining experience high above the city.
+            </p>
+        </div>
+    </div>
+    <!-- 6. Skydive Dubai -->
+    <div class="skydive_dubai">
+        <img class="skydive_img" alt="Skydive Dubai" src="media/Skydive_Img.png">
+        <div class="skydive_info">
+            <h3>Skydive Dubai</h3>
+            <p>
+                Skydive Dubai offers an exhilarating experience with breathtaking aerial views of Dubai's iconic landmarks and landscapes, providing an unforgettable freefall adventure.<br><br>
+                Entrance Fee: Ranges from 1199 to 2199 AED.
+            </p>
+        </div>
+    </div>
+
+    </main>
+    <script src = "scripts/script.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Copyright 2024. Horizon Gateway. All rights reserved.</p>
+            
+            <div class="social-media">
+                <a href="https://www.facebook.com/christructure" target="_blank">
+                    <img src="media/fb_logo.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/christructure/" target="_blank">
+                    <img src="media/ig_logo.png" alt="Instagram">
+                </a>
+            </div>
+            
+            <a href="more_hg.html" class="subscribe-link">Subscribe</a>
+        </div>
+    </footer>
+
+</body>
+</html>

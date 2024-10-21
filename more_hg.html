@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+	Name: Kumaarr, Kkshitij
+	Section: CS201
+	Date: October 21, 2024
+	-->
+    <title>More</title>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <meta name = "description " content = "Connect with Horizon Gateway using our subscription form to receive updates, and access essential information for contacting us." />
+    <link rel="stylesheet" href="css/styles.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href = "media/favicon.ico" />
+    <link rel = "icon" type = "image/png" sizes="32*32" href="media/favicon-32.png" />
+    <link rel = "apple-touch-icon" sizes="180*180" href = "media/apple-touch-icon.png" />
+    <link rel ="icon" sizes="192*192" href="media/android-chrome-192.png"/>
+</head>
+
+<body>
+    <header>
+        <img class="hg-logo" alt="none" src="media/HG_logo.png">
+    </header>
+
+    <!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="home_hg.html">Home</a>
+            <a href="places_hg.html">Places</a>
+            <a href="events_hg.html">Events</a>
+            <a href="more_hg.html">More</a>
+		</div>
+		<a class = "menu-icon" onclick = "hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav> 
+    <!-- Desktop - Tablet Nav -->
+    <nav class="navbar-tablet-desktop">
+        <a href="home_hg.html">Home</a>
+        <a href="places_hg.html">Places</a>
+        <a href="events_hg.html">Events</a>
+        <a href="more_hg.html">More</a>
+    </nav>
+
+    <!-- Background Image -->
+    <img class="background_event" src="media/More_bg.jpg">
+
+    <main>
+    <!-- Welcome Text Section -->
+    <div class="welcome-text">
+        <h1>Welcome to Horizon Gateway!</h1>
+        <p>
+            Welcome to Horizon Gateway, your ultimate guide to exploring Dubai’s iconic landmarks and must-visit destinations. 
+            From the towering Burj Khalifa to the tranquil Dubai Creek, we showcase the city’s blend of modern marvels and rich cultural heritage. 
+            Whether you’re a tourist seeking new adventures or a local rediscovering the city, Horizon Gateway highlights Dubai’s best—from stunning beaches 
+            to bustling markets and thrilling entertainment venues like Topgolf and the Dubai Fountain.
+        </p>
+    </div>
+
+    <!-- Grid Layourt -->
+    <div class="grid">
+    <!-- Contact Us : -->
+    <aside>
+        <h2>Contact Us: </h2>
+            <fieldset>
+                <!-- Desktop - Tablet Span -->
+                <span class="email">
+                    Email: <a href="mailto:horizongateway@gmail.com">horizongateway@gmail.com</a>
+                </span>
+                
+                <span class="tel-num">
+                    Phone: <a href="tel:+9999912345">99999 12345</a>
+                </span>
+                <!-- Mobile Span -->
+                <span class="mobile-email">
+                    Email: <a href="mailto:horizongateway@gmail.com">horizongateway@gmail.com</a>
+                </span>
+                
+                <span class="mobile-tel-num">
+                    Phone: <a href="tel:+9999912345">99999 12345</a>
+                </span>                
+            </fieldset>
+            <br>
+            <!-- Contact Info - Desktop & Tablet -->
+            <p class="contact-desktop">Fill out the form on the right to subscribe and stay updated on upcoming events and attractions.
+                For any additional inquiries, concerns, or feedback, feel free to contact us or use the form on the right.</p>
+            <!-- Contact Info - Mobile -->
+            <p class="contact-mobile-tab">Fill out the form on the below to subscribe and stay updated on upcoming events and attractions.
+                For any additional inquiries, concerns, or feedback, feel free to contact us or use the form below.</p>
+    </aside>
+
+    <!-- Subscription Form -->
+    <div class="form-container">
+        <img class="form-logo" src="media/HG_logo.png">
+        <form>
+            <legend>HORIZON GATEWAY</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="query">Event Queries:</label>
+            <textarea id="query" name="query" rows="4" placeholder="Your event queries here"></textarea>
+
+            <input type="checkbox" id="checkbox" name="checkbox">
+            <label for="checkbox">I would like to receive emails about upcoming events.</label>
+            <br>
+            <br>
+            
+            <div class="form-buttons">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Subscribe">
+            </div>
+            
+        </form>
+        <!-- Thank You Message -->
+        <div id="thankYouMessage" style="display:none;">
+            <h2>Thank you! Your form has been submitted successfully.</h2>
+        </div>
+
+    </div>
+    </div>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Copyright 2024. Horizon Gateway. All rights reserved.</p>
+            
+            <div class="social-media">
+                <a href="https://www.facebook.com/christructure" target="_blank">
+                    <img src="media/fb_logo.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/christructure/" target="_blank">
+                    <img src="media/ig_logo.png" alt="Instagram">
+                </a>
+            </div>
+            
+            <a href="more_hg.html" class="subscribe-link">Subscribe</a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

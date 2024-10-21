@@ -1,0 +1,1775 @@
+/* CSS styles for Horizon Gateway
+Author: Kumaarr, Kkshitij
+Section: CS201
+Date: October 21, 2024
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, h5, h6, div, img, ul, ol, li, figure, figcaption, section, article, aside, audio, video, p, blockquote, input, button, textarea, select, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* ================================================================== MOBILE VIEWPORT ==================================================================  */
+@media only screen and (min-width: 375px) and (max-width: 915px) {
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 88px; 
+    padding: 0; 
+    width: 100%; 
+}
+
+/* Logo */
+.hg-logo {
+    max-width: 86px;  
+    max-height: 86px; 
+}
+
+/* Style for Navigation */
+#menu-links a {
+    display: block; 
+    padding: 15px; 
+    text-decoration: none; 
+    border-top: 1px solid #ccc; 
+    border-bottom: 1px solid #ccc;
+}
+
+#menu-links a:hover {
+    background-color: #f0f0f0;
+    color: #000; 
+}
+
+.mobile-nav a {
+    color: white;
+    background-color: black;
+    font-family: "Francois One", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 5%;
+    display: block;
+}
+
+.mobile-nav {
+    border: #008080;
+}
+
+/* Hamburger icon */
+body.menu-open {
+    background-color: black;
+    color: white; 
+}
+
+.menu-icon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 0;
+    transition: transform 0.3s ease; 
+}
+
+.menu-icon.rotate {
+    transform: rotate(-90deg); 
+    transition: transform 0.2s ease;
+}
+
+#menu-links {
+    display: none; 
+    position: absolute; 
+    top: 80px; 
+    left: 0; 
+    width: 100%; 
+    background-color: black; 
+    z-index: 1; 
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.navbar-tablet-desktop {
+    display: none;
+}
+
+/* Styles for Footer */
+.footer {
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 100%; 
+    padding: 0 20px; 
+    margin: 0 auto; 
+}
+
+.footer p {
+    font-size: 12px; 
+    margin-bottom: 10px; 
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px; 
+    height: 24px; 
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2); 
+}
+
+.subscribe-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px; 
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.subscribe-link:hover {
+    color: #e1ddbf; 
+}
+
+/* ================== HOME ================== */
+.index-intro {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.home-video {
+    width: 100%; 
+    height: auto; 
+    max-width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #008080; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.home-video video {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 8px; 
+}
+
+/* Subheading Styles */
+.subheading {
+    padding: 2px; 
+    text-align: center; 
+    color: #000;
+    background-color: #e1ddbf;
+}
+
+.subheading h1 {
+    font-size: 20px;
+    font-family: "Inknut Antiqua";
+}
+
+/* ================== PLACES ================== */
+/* Main Styles */
+main h3 {
+    font-size: 24px; 
+    font-family: "Inknut Antiqua";
+}
+
+/* General Styles */
+.burj_khalifa, .topgolf_dubai, .dubai_mall, .dubai_fountain, .atmosphere_burj_khalifa, .skydive_dubai {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+/* Styles for Image */
+.burj_khalifa_img, .topgolf_img, .dubai_mall_img, .dubai_fountain_img, .atmosphere_img, .skydive_img {
+    width: 100%; 
+    height: auto; 
+}
+
+/* Styles for Info */
+.burj_khalifa_info, .topgolf_info, .dubai_mall_info, .dubai_fountain_info, .atmosphere_info, .skydive_info {
+    width: 100%; 
+    margin: 10px 0; 
+    text-align: center; 
+}
+
+p {
+    text-align: justify;
+    font-family: "Inclusive Sans";
+}
+
+/* Paragraph Styles */
+.burj_khalifa_info p, .topgolf_info p, .dubai_mall_info p, .dubai_fountain_info p, .atmosphere_info p, .skydive_info p {
+    font-size: 18px; 
+}
+
+/* Color */
+.burj_khalifa, .dubai_mall, .atmosphere_burj_khalifa {
+    background-color: #04253A;
+    color: white;
+}
+
+.topgolf_dubai, .dubai_fountain, .skydive_dubai {
+    background-color: #008080;
+    color: white;
+}
+
+/* ================== EVENTS ================== */
+
+/* Background */
+.background_event {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    z-index: -1; 
+}
+
+/* Event Container Styles */
+.event_vishal_mishra,
+.event_sail_prix {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)); 
+    padding: 20px; 
+    border-radius: 10px; 
+    color: white; 
+}
+
+/* Event Image Styles */
+.event_vishal_mishra img,
+.event_sail_prix img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+/* Event Details and Content */
+.event-details,
+.event-content {
+    text-align: center; 
+    margin: 10px 0; 
+}
+
+/* Style Rule for Buy Tickets */
+.buy-tickets {
+    color: #000;
+    background-color: #E1DDBF;
+    border: none;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+    display: block; 
+    margin: 50px auto; 
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+    text-decoration: none;
+    
+}
+
+.buy-tickets:hover {
+    background-color: #008080;
+    color: white;
+}
+
+a {
+    text-decoration: none; 
+}
+
+
+/* Schedule Table Styles */
+
+.schedule {
+    display: none;
+}
+
+article h3 {
+    text-decoration: underline;
+}
+
+article {
+    text-align: center;
+    margin: 0 auto;
+}
+
+article p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+article ul {
+    list-style-position: inside; 
+    padding-left: 0; 
+    display: inline-block; 
+    text-align: left; 
+}
+
+article li {
+    margin-bottom: 5px; 
+}
+
+/* ================== MORE ================== */
+
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch; 
+}
+
+/* Style Rule for Welcome text */
+.welcome-text {
+    font-family: "Inclusive Sans";
+    line-height: 1.5em;
+    width: 80%; 
+    padding: 20px; 
+    margin: 30px auto 20px auto; 
+    text-align: center; 
+    color: white; 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+/* Style Rules for Grid Layout */
+.grid {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px;
+    width: 80%; 
+    margin: 0 auto; 
+    padding: 0; 
+}
+
+/* Contact Us Section Style Rules */
+aside {
+    font-family: "Inclusive Sans";
+    text-align: center;
+    width: 100%; 
+    padding: 20px; 
+    color: #ccc; 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+aside h2 {
+    font-weight: bold;
+}
+/* Style for Email and Telephone Span */
+span.mobile-email, span.mobile-tel-num {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+}
+span.mobile-email a, span.mobile-tel-num a{
+    text-decoration: none;
+    color: rgb(0, 182, 182);
+}
+
+span.mobile-email a:hover, span.mobile-tel-num a:hover{
+    text-decoration: none;
+    color: #E1DDBF;
+    text-transform: 0.3s ease;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: 10px auto;
+    margin-bottom: 0%;
+}
+
+.contact-mobile-tab {
+    font-size: 18px;
+    padding: 4%;
+}
+
+.contact-mobile-tab {
+    margin-top: 0%;
+}
+
+.email, .tel-num, .contact-desktop{
+    display: none;
+}
+
+.mobile-email, .mobile-tel-num, .contact-mobile-tab{
+    display: block;
+}
+
+/* Form Style Rules */
+.form-container {
+    width: 100%; 
+    padding: 20px; 
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8)); 
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: Inter;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 4%;
+}
+.form-logo {
+    display: block; 
+    margin: 0 auto 20px auto; 
+    width: 150px; 
+    height: auto; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    font-size: 14px; 
+    box-sizing: border-box; 
+}
+
+textarea {
+    resize: vertical; 
+    height: 100px; 
+}
+
+.form-buttons input[type="reset"] {
+    width: 100%; 
+    text-align: center;
+    margin: 5px 0; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 20px; 
+    background-color: black; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.form-buttons input[type="submit"] {
+    text-align: center; 
+    padding: 12px; 
+    border: none; 
+    border-radius: 20px; 
+    background-color: black; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.form-buttons input[type="reset"]:hover,
+.form-buttons input[type="submit"]:hover {
+    background-color: #008080; 
+    color: white; 
+}
+
+#thankYouMessage {
+    text-align: center; 
+    font-family: inherit; 
+    font-size: 18px; 
+    color: #333; 
+    background-color: #f0f8ff; 
+    padding: 20px; 
+    border-radius: 20px; 
+    margin: 20px auto; 
+    width: 80%;
+    transition: 0.5s ease; 
+}
+
+.form-buttons {
+    display: flex; 
+    flex-direction: column; 
+    margin-top: 10px;
+    width: auto;
+}
+}
+
+/* ================================================================== TABLET VIEWPORT ==================================================================  */
+@media screen and (min-width: 630px), print { 
+
+/* Hide Mobile Nav  */
+.mobile-nav {
+    display: none;
+}
+
+/* General Styles */
+header {
+    background-color: #000; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+    flex-shrink: 0; 
+    width: 100%; 
+}
+
+.hg-logo {
+    max-width: 200px;  
+    max-height: 190px; 
+}
+
+/* Style for Navigation */
+.navbar-tablet-desktop {
+    background-color: #008080; 
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;           
+    width: 100%;                   
+    position: relative; 
+    transition: background-color 0.3s;
+}
+
+.navbar-tablet-desktop a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar-tablet-desktop a:hover {
+    background-color: #000;
+    color: white;
+    font-size: 22px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-tablet-desktop a:hover::after {
+    width: 100%; 
+    left: 0; 
+}
+
+/* Subheading */
+.subheading {
+    background: #E1DDBF;
+    display: flex;
+    width: 100%;
+    padding: 2px; 
+    justify-content: center; 
+    align-items: center;
+    font-family: "Inknut Antiqua";     
+}
+
+/* ================== HOME ================== */
+.index-intro {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-video {
+    padding: 20px 5%; 
+    background-color: #008080;
+}
+
+.home-video video {
+    height: auto; 
+    max-height: 500px; 
+    width: 100%; 
+    margin: 0;
+    display: block;
+}
+
+/* ================== PLACES ================== */
+/* Main  */
+main h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px; 
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: underline;
+    font-family: "Inknut Antiqua";
+
+}
+
+p {
+    text-align: justify;
+    font-family: "Inclusive Sans";
+}
+
+/* Burj Khalifa Section */
+.burj_khalifa {
+    display: flex;                     
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #04253A;        
+    padding: 40px; 
+}
+
+.burj_khalifa_info {
+    color: white;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.burj_khalifa_info p {
+    line-height: 1.6;
+    font-size: 22px; 
+}
+
+.burj_khalifa_img {
+    width: 100%; 
+    max-width: 400px; 
+    height: auto; 
+}
+
+/* TopGolf Dubai Section */
+.topgolf_dubai {
+    display: flex;                     
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #008080;        
+    padding: 40px; 
+}
+
+.topgolf_info {
+    color: white;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.topgolf_info p {
+    line-height: 1.6;
+    font-size: 22px; 
+}
+
+.topgolf_img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+/* Dubai Mall Section */
+.dubai_mall {
+    display: flex;                     
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #04253A;        
+    padding: 40px; 
+}
+
+.dubai_mall_info {
+    color: white;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.dubai_mall_info p {
+    line-height: 1.6;
+    font-size: 22px; 
+}
+
+.dubai_mall_img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+/* Dubai Fountain Section */
+.dubai_fountain {
+    display: flex;                     
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #008080;        
+    padding: 40px; 
+}
+
+.dubai_fountain_info {
+    color: white;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.dubai_fountain_info p {
+    line-height: 1.6;
+    font-size: 22px; 
+}
+
+.dubai_fountain_img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+/* At.mosphere at Burj Khalifa Section */
+.atmosphere_burj_khalifa {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #04253A;        
+    padding: 40px; 
+}
+
+.atmosphere_info {
+    color: white;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.atmosphere_info p {
+    line-height: 1.6;
+    font-size: 22px; 
+}
+
+.atmosphere_img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+/* Skydive Dubai Section */
+.skydive_dubai {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: #008080;        
+    padding: 40px; 
+}
+
+.skydive_info {
+    color: white;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.skydive_info p {
+    line-height: 1.6;
+    font-size: 22px; 
+}
+
+.skydive_img {
+    width: 100%; 
+    max-width: 500px; 
+    height: auto; 
+}
+
+/* ================== EVENTS ================== */
+/* Background */
+.background_event {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+/* Event Container Styles */
+.events-section {
+    padding: 20px; 
+    text-align: center; 
+}
+
+.events-section a {
+    text-decoration: none; 
+}
+
+.events-section h2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 28px; 
+    font-weight: 700;
+    margin: 10px 0; 
+}
+
+.events-section p {
+    color: #ffffff;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 20px; 
+    font-weight: 400;
+    margin: 5px 0; 
+}
+
+/* Style Rule for Buy Tickets */
+.buy-tickets {
+    color: #000;
+    background-color: #E1DDBF;
+    border: none;
+    padding: 12px 20px; 
+    font-size: 24px; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; 
+    margin: 30px auto; 
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+.buy-tickets:hover {
+    background-color: #008080;
+    color: white;
+}
+
+.buy-tickets a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* VISHAL MISHRA EVENT  */
+
+.event_vishal_mishra {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 30px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    padding: 15px; 
+    border-radius: 10px; 
+    color: white; 
+    justify-content: center; 
+}
+
+.event_vishal_mishra img {
+    width: 40%; 
+    height: auto;
+    object-fit: cover; 
+    margin-right: 20px; 
+}
+
+.event-details {
+    width: 60%; 
+}
+
+/* SAIL PRIX EVENT */
+.event_sail_prix {
+    text-align: center;
+    color: white;
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 30px; 
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)); 
+    padding: 20px; 
+    border-radius: 8px; 
+}
+
+.event_sail_prix img {
+    width: 40%; 
+    height: auto; 
+    object-fit: cover; 
+    margin-right: 20px; 
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    align-items: center; 
+}
+
+.schedule {
+    display: none; 
+}
+
+.article {
+    display: block; 
+    padding: 20px; 
+    border-radius: 8px; 
+    margin-top: 20px; 
+}
+
+/* ================== MORE ================== */
+
+/* Style Rule for Welcome text */
+.welcome-text h1 {
+    font-family: "Inclusive Sans";
+    font-size: 30px;
+}
+
+.welcome-text p {
+    font-family: "Inclusive Sans";
+    font-size: 24px;
+    line-height: 1.5em;
+    margin-top: 5%;
+}
+
+.welcome-text {
+    padding: 40px;
+}
+
+/* Style Rules for Grid Layout */
+.grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Contact Us & Form Container Style Rules */
+aside, .form-container {
+    width: 100%;
+    padding: 40px;
+    align-items: center;
+    margin: 0 3% 2% 3%;
+}
+
+aside h2 {
+    font-family: "Inclusive Sans";
+    font-size: 28px;
+    font-weight: bold;
+}
+
+aside p {
+    font-family: "Inclusive Sans";
+    font-size: 27px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 22px;
+    margin-bottom: 200px;
+}
+
+/* Style for Email and Telephone Span */
+span.email, span.tel-num {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+span.email a, span.tel-num a{
+    text-decoration: none;
+    color: rgb(0, 182, 182);
+}
+
+span.email a:hover, span.tel-num a:hover{
+    text-decoration: none;
+    color: #E1DDBF;
+    font-size: 1.1em; 
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+    margin-bottom: 0%;
+}
+
+.contact-mobile-tab {
+    margin-top: 0%;
+    font-size: 24px;
+}
+
+span.mobile-email, span.mobile-tel-num, span.contact-desktop {
+    display: none;
+}
+
+.email, .tel-num, .contact-mobile-tab {
+    display: block;
+}
+
+/* Form Style Rules */
+.form-container {
+    font-family: Inter;
+}
+
+legend {
+    text-align: center;
+}
+input[type="text"], input[type="email"], textarea {
+    font-size: 20px;
+    padding: 2%;
+}
+
+.form-buttons input[type="reset"],
+.form-buttons input[type="submit"] {
+    padding: 20px 24px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 48%;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0 1%;
+    font-size: 16px;
+    min-width: 120px;
+}
+
+#thankYouMessage {
+    text-align: center; 
+    font-family: inherit; 
+    font-size: 18px; 
+    color: #333; 
+    background-color: #f0f8ff; 
+    padding: 20px; 
+    border-radius: 20px; 
+    margin: 20px auto; 
+    width: 80%;
+    transition: 0.5s ease; 
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 10px;
+}
+}
+
+/* ================================================================== DESKTOP VIEWPORT ==================================================================  */
+@media screen and (min-width: 1015px), print {
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 194px;
+    padding: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+/* Logo */
+.hg-logo {
+    max-width: 200px;  
+    max-height: 190px; 
+}
+
+/* Style for Navigation */
+.mobile-nav {
+    display: none;
+}
+
+.navbar-tablet-desktop {
+    background-color: #008080;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.navbar-tablet-desktop a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.navbar-tablet-desktop a:hover {
+    background-color: #000;
+    color: white;
+    font-size: 34px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-tablet-desktop a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.subheading {
+    background: #E1DDBF;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inknut Antiqua"; 
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
+.subscribe-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.subscribe-link:hover {
+    color: #e1ddbf;
+}
+
+/* ================== HOME ================== */
+.index-intro {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home-video {
+    height: auto;
+    width: 100%;
+    background-color: #008080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.home-video video {
+    width: 90%;
+    height: auto;
+    max-height: 100vh;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================== PLACES ======================== */
+/* Main Styles */
+main h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    text-decoration: underline;
+    font-family: "Inknut Antiqua";
+}
+
+.places p {
+    text-align: justify;
+    font-family: "Inclusive Sans";
+
+}
+
+/* Burj Khalifa Section */
+.burj_khalifa {
+    display: flex;                     
+    flex-direction: row;               
+    align-items: flex-start;          
+    background-color: #04253A;        
+    padding: 50px;                    
+}
+
+.burj_khalifa_img {
+    width: 400px;
+    height: 600px;
+}
+
+.burj_khalifa_info {
+    width: 80%;
+    color: white;
+    margin-left: 05%;
+}
+
+.burj_khalifa_info p {
+    line-height: 1.6;
+    font-size: 28px;
+}
+
+/* TopGolf Dubai Section */
+.topgolf_dubai {
+    display: flex;                     
+    flex-direction: row-reverse;
+    align-items: flex-start;          
+    background-color: #008080;        
+    padding: 50px;                    
+}
+
+.topgolf_img {
+    width: 650px;
+    height: 450px;
+}
+
+.topgolf_info {
+    width: 90%;                        
+    color: white;
+    margin-right: 5%;
+}
+
+.topgolf_info p {
+    line-height: 1.6;
+    font-size: 28px;
+}
+
+/* Dubai Mall Section */
+.dubai_mall {
+    display: flex;                     
+    flex-direction: row; 
+    align-items: flex-start;          
+    background-color: #04253A;        
+    padding: 50px;                    
+}
+
+.dubai_mall_img {
+    width: 600px;
+    height: auto;
+}
+
+.dubai_mall_info {
+    width: 80%;                        
+    color: white;
+    margin-left: 5%;
+}
+
+.dubai_mall_info p {
+    line-height: 1.6;
+    font-size: 28px;
+}
+
+/* Dubai Fountain Section */
+.dubai_fountain {
+    display: flex;                     
+    flex-direction: row-reverse; 
+    align-items: flex-start;          
+    background-color: #008080;        
+    padding: 50px;                    
+}
+
+.dubai_fountain_img {
+    width: 600px;
+    height: auto;
+}
+
+.dubai_fountain_info {
+    width: 60%;                        
+    color: white;
+    margin-right: 5%;
+}
+
+.dubai_fountain_info p {
+    line-height: 1.6;
+    font-size: 28px;
+}
+
+/* At.mosphere at Burj Khalifa Section */
+.atmosphere_burj_khalifa {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;          
+    background-color: #04253A;        
+    padding: 50px;                    
+}
+
+.atmosphere_img {
+    width: 500px;
+    height: auto;
+}
+
+.atmosphere_info {
+    width: 60%;                        
+    color: white;
+    margin-left: 5%;
+}
+
+.atmosphere_info p {
+    line-height: 1.6;
+    font-size: 28px;
+}
+
+/* Skydive Dubai Section */
+.skydive_dubai {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;          
+    background-color: #008080;        
+    padding: 50px;                    
+}
+
+.skydive_img {
+    width: 600px;
+    height: auto;
+}
+
+.skydive_info {
+    width: 80%;                        
+    color: white;
+    margin-right: 5%;
+}
+
+.skydive_info p {
+    line-height: 1.6;
+    font-size: 28px;
+}
+
+/* ================== EVENTS ================== */
+/* Background */
+.background_event {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Event Container Styles */
+.events-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.events-section a {
+    text-decoration: none;
+}
+
+.events-section h2{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    height: 45px;
+}
+
+.events-section p{
+    color: #ffffff;
+    text-align: center;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    position: relative;
+    height: 60px;
+}
+
+/* Style Rule for Buy Tickets */
+.buy-tickets {
+    color: #000;
+    background-color: #E1DDBF;
+    border: none;
+    padding: 15px 25px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; 
+    margin: 50px auto; 
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 10px;   
+    text-shadow: 0.5px 1px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+
+.buy-tickets a {
+    text-decoration: none; 
+}
+
+.buy-tickets:hover {
+    background-color: #008080;
+    color: white;
+}
+
+/* VISHAL MISHRA EVENT  */
+.event_vishal_mishra figcaption {
+    color: white;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.event_vishal_mishra {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    padding: 20px;
+    border-radius: 10px; 
+    color: white; 
+    justify-content: center; 
+}
+
+.event_vishal_mishra img {
+    width: 50%; 
+    height: auto;
+    object-fit: cover; 
+    margin-right: 50px; 
+}
+
+.event-details {
+    width: 50%; 
+}
+
+/* SAIL PRIX EVENT */
+
+.event_sail_prix figcaption {
+    color: white;
+    font-family: "Inter-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.event_sail_prix {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.event_sail_prix img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.event-details {
+    margin-bottom: 20px;
+}
+
+/* Style rule for table */
+.schedule {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-left: 15%;
+    border-collapse: collapse;
+}
+
+.schedule caption {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.schedule th, .schedule td {
+    color: #000;
+    padding: 16px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.schedule tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.schedule tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.schedule th {
+    background-color: #e1ddbf;
+    font-weight: bold;
+}
+
+article {
+    display: none;
+}
+
+/* ================== MORE ================== */
+/* General Style Rule */
+main {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Style Rule for Welcome text */
+.welcome-text {
+    font-family: "Inclusive Sans";
+    width: 80%;
+    max-width: 2000px;
+    text-align: center;
+    color: white;
+    margin: 50px auto;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-text h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.welcome-text p {
+    font-size: 24px;
+    line-height: 1.6;
+    max-width: 95%;
+    margin: 10px auto;
+    text-align: justify;
+}
+
+/* Style Rules for Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    gap: 50px;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 3%;
+    margin-left: -2%;
+}
+
+/* Contact Us Style Rules */
+aside {
+    font-family: "Inclusive Sans";
+    color: #ccc;
+    padding: 30px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    width: 95%; 
+    margin: 0%;
+}
+
+aside h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+aside p {
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+/* Style for Email and Telephone Span */
+span.email, span.tel-num {
+    display: block;
+    font-size: 24px;
+    color: #fff;
+    background-color: #000;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: fit-content;
+    text-decoration: none;
+}
+
+span.email a, span.tel-num a{
+    text-decoration: none;
+    color: rgb(0, 182, 182);
+}
+
+span.email a:hover, span.tel-num a:hover{
+    text-decoration: none;
+    color: #E1DDBF;
+    font-size: 1.2em; 
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+    margin-bottom: 0%;
+}
+
+.contact-desktop {
+    font-size: 28px;
+    padding: 4%;
+}
+
+span.mobile-email, span.mobile-tel-num, .contact-mobile-tab {
+    display: none; /* Hide on desktop view */
+}
+
+.email, .tel-num, .contact-desktop {
+    display: block;
+}
+
+/* Form Container Style Rules */
+.form-container {
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8));
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 85%;
+    font-family: Inter;
+}
+
+legend {
+    text-align: center;
+    margin-bottom: 5%;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-buttons input[type="reset"],
+.form-buttons input[type="submit"] {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    width: 42%;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.form-buttons input[type="reset"]:hover,
+.form-buttons input[type="submit"]:hover {
+    background-color: #008080;
+    color: white;
+}
+#thankYouMessage {
+    text-align: center; 
+    font-family: inherit; 
+    font-size: 18px; 
+    color: #333; 
+    background-color: #f0f8ff; 
+    padding: 20px; 
+    border-radius: 20px; 
+    margin: 20px auto; 
+    width: 80%;
+    transition: 0.5s ease; 
+}
+.form-logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 150px;
+    height: auto;
+}
+}

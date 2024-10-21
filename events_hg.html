@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+	Name: Kumaarr, Kkshitij
+	Section: CS201
+	Date: October 21, 2024
+	-->
+    <title>Events</title>
+    <meta charset="utf-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0" />
+    <meta name = "description " content = "Explore the exciting events taking place in Dubai. Stay updated on the latest happenings and experiences at this vibrant venue." />
+    <link rel="stylesheet" href="css/styles.min.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Inknut+Antiqua:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href = "media/favicon.ico" />
+    <link rel = "icon" type = "image/png" sizes="32*32" href="media/favicon-32.png" />
+    <link rel = "apple-touch-icon" sizes="180*180" href = "media/apple-touch-icon.png" />
+    <link rel ="icon" sizes="192*192" href="media/android-chrome-192.png"/>
+</head>
+
+<body>
+    <header>
+        <img class="hg-logo" alt="hg-logo" src="media/HG_logo.png">
+    </header>
+
+    <!-- Mobile Nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="home_hg.html">Home</a>
+            <a href="places_hg.html">Places</a>
+            <a href="events_hg.html">Events</a>
+            <a href="more_hg.html">More</a>
+		</div>
+		<a class = "menu-icon" onclick = "hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav> 
+    <!-- Desktop - Tablet Nav -->
+    <nav class="navbar-tablet-desktop">
+        <a href="home_hg.html">Home</a>
+        <a href="places_hg.html">Places</a>
+        <a href="events_hg.html">Events</a>
+        <a href="more_hg.html">More</a>
+    </nav>
+
+    <!-- Subheading -->
+    <div class="subheading">
+        <h1>Upcoming Events</h1>
+    </div>
+
+    <!-- Background Image -->
+    <img class="background_event" src="media/Events_bg.jpg">
+    
+    <!-- Main Content -->
+    <main class="events-section">
+
+        <!-- Event 1: Vishal Mishra Live -->
+        <div class="event_vishal_mishra">
+            <img src="media/Vishal_Mishra_img.jpg" alt="Vishal Mishra Live" class="event-img">
+            <div class="event-details">
+                <h2>Vishal Mishra Live</h2>
+                <h2>20th November, 2024 @22:00</h2>
+                <figcaption>Prepare for an unforgettable night of melodies and emotions as renowned Indian playback singer and music composer Vishal Mishra performs live.</figcaption>
+                <a href="https://www.coca-cola-arena.com/music/720/vishal-mishra" target="_blank">
+                    <button class="buy-tickets">Buy Tickets</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Event 2: Emirates Dubai Sail Prix -->
+        <div class="event_sail_prix">
+            <img src="media/Dubai_Sail_Img.jpg" alt="Emirates Dubai Sail Prix" class="event-img">
+            <div class="event-content">
+                <div class="event-details">
+                    <h2>Emirates Dubai Sail Prix</h2>
+                    <h2>23 Nov '24 - 23 Nov '24</h2>
+                    <figcaption>Cheer for your favourite team as they steer F50 boats at this international tournament.</figcaption>
+                </div>
+
+                <!-- Mobile & Tablet Schedule -->
+                <article>
+                    <h3>Schedule:</h3>
+                    <p>22nd November (Friday)</p>
+                    <ul>
+                        <li>9:00 - Team Base Tour</li>
+                        <li>9:45 - Team Base Tour</li>
+                    </ul>
+                
+                    <p>23rd November (Saturday)</p>
+                    <ul>
+                        <li>13:00 - Gates Open</li>
+                        <li>17:00 - Show End</li>
+                    </ul>
+                
+                    <p>24th November (Sunday)</p>
+                    <ul>
+                        <li>13:00 - Gates Open</li>
+                        <li>17:00 - Show End</li>
+                    </ul>
+                </article>
+                
+                <!-- Table: Desktop -->
+                <table class="schedule">
+                    <caption>Schedule:</caption>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Event</th>
+                    </tr>
+
+                    <tr>
+                        <td>22 November (Friday)</td>
+                        <td>9:00</td>
+                        <td>Team Base Tour (1st Tour)</td>
+                    </tr>
+                        
+                    <tr>
+                        <td>22 November (Friday)</td>
+                        <td>9:45</td>
+                        <td>Team Base Tour (2nd Tour)</td>
+                    </tr>
+
+                    <tr>
+                        <td>23 November (Saturday)</td>
+                        <td>13:00</td>
+                        <td>Gates Open</td>
+                    </tr>
+
+                    <tr>
+                        <td>23 November (Saturday)</td>
+                        <td>17:00</td>
+                        <td>Show End</td>
+                    </tr>
+
+                    <tr>
+                        <td>24 November (Sunday)</td>
+                        <td>13:00</td>
+                        <td>Gates Open</td>
+                    </tr>
+
+                    <tr>
+                        <td>24 November (Sunday)</td>
+                        <td>17:00</td>
+                        <td>Show End</td>
+                    </tr>
+                </table>
+            
+                <a href="https://dubai.platinumlist.net/event-tickets/94302/sailgp-2024" target="_blank">
+                    <button class="buy-tickets">Buy Tickets</button>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; Copyright 2024. Horizon Gateway. All rights reserved.</p>
+            
+            <div class="social-media">
+                <a href="https://www.facebook.com/christructure" target="_blank">
+                    <img src="media/fb_logo.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/christructure/" target="_blank">
+                    <img src="media/ig_logo.png" alt="Instagram">
+                </a>
+            </div>
+            
+            <a href="more_hg.html" class="subscribe-link">Subscribe</a>
+        </div>
+    </footer>
+    <script src = "scripts/script.js"></script>
+</body>
+</html>
